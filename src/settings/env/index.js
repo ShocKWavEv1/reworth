@@ -10,6 +10,8 @@ const envVars = preval`
 
 log.trace("Env vars: ", envVars);
 
+console.log('derp');
+
 const dev = envVars?.env === "development";
 
 const env = dev ? devEnv : prodEnv;
